@@ -1,0 +1,29 @@
+{
+  "cluster": "perso.nile.works",
+  "port": 4000,
+  "log_driver": "awslogs",
+  "limits": {
+    "memory": "256m"
+  },
+  "builds": [
+    {
+      "autodeploy": true,
+      "branch": "master",
+      "notify": "perso-hal",
+      "version": "0.1"
+    }
+  ],
+  "routes": [
+    {
+      "path": "/",
+      "external": true
+    }
+  ],
+  "stages": [
+    {
+      "domain": "olympic-rules.perso.nile.works",
+      "name": "prod",
+      "scale": 1
+    }
+  ]
+}

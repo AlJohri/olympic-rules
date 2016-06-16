@@ -1,0 +1,4 @@
+pypandoc==1.1.3
+requests
+lxml
+bs4
