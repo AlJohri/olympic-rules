@@ -1,6 +1,6 @@
 {
   "cluster": "perso.nile.works",
-  "port": 4000,
+  "port": 8080,
   "log_driver": "awslogs",
   "limits": {
     "memory": "256m"
